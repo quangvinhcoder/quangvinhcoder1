@@ -1,6 +1,5 @@
 import { createWebHistory, createRouter } from "vue-router";
 import ContactBook from "@/views/ContactBook.vue";
-import { p } from "vue-router/dist/router-CWoNjPRp.mjs";
 
 const routes = [
   {

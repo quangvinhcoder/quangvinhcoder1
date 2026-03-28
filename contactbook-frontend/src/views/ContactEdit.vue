@@ -29,7 +29,7 @@ export default {
                 console.log(error);
                 // Chuyển sang trang NotFound đồng thời giữ cho URL không đổi
                 this.$router.push({
-                    name: "notfound",
+                    name: "NotFound",
                     params: {
                         pathMatch: this.$route.path.split("/").slice(1)
                     },
@@ -42,7 +42,7 @@ export default {
             try {
                 await ContactService.update(this.contact._id, data);
                 alert('Liên hệ được cập nhật thành công.');
-                this.$router.push({ name: "contactbook" });
+                this.$router.push({ name: "ContactBook" });
             } catch (error) {
                 console.log(error);
             }

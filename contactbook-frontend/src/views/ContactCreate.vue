@@ -12,9 +12,6 @@ export default {
     components: {
         ContactForm,
     },
-    props: {
-        id: { type: String, required: true },
-    },
     data() {
         return {
             contact: null,
@@ -26,14 +23,14 @@ export default {
             try {
                 await ContactService.create(data);
                 alert('Liên hệ được tạo thành công.');
-                this.$router.push({ name: "contactbook" });
+                this.$router.push({ name: "ContactBook" });
             } catch (error) {
                 console.log(error);
             }
         },
     },
     created() {
-        this.getContact(this.id);
+        this.contact = {};
         this.message = "";
     },
 };

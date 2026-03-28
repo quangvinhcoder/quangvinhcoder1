@@ -3,9 +3,15 @@
         <a href="/" class="navbar-brand">Ứng dụng Quản lý danh bạ</a>
         <div class="mr-auto navbar-nav">
             <li class="nav-item">
-                <router-link :to="{ name: 'contactbook' }" class="nav-link">
+                <router-link :to="{ name: 'ContactBook' }" class="nav-link">
                     Danh bạ
                     <i class="fas fa-address-book"></i>
+                </router-link>
+            </li>
+            <li class="nav-item">
+                <router-link :to="{ name: 'contact.create' }" class="nav-link">
+                    Thêm liên hệ
+                    <i class="fas fa-plus"></i>
                 </router-link>
             </li>
         </div>
