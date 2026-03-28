@@ -12,6 +12,12 @@ const routes = [
     name: "NotFound",
     component: () => import("@/views/NotFound.vue"),
   },
+  {
+    path: "/contact/:id",
+    name: "contact.edit",
+    component: () => import("@/views/ContactEdit.vue"),
+    props: true,
+  },
 ];
 
 const router = createRouter({
